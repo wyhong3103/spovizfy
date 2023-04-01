@@ -1,3 +1,4 @@
+import './styles/App.css';
 import { useState } from "react";
 import { Home } from "./pages/Home";
 import { Result } from "./pages/Result";
@@ -11,9 +12,9 @@ export const App = () => {
         <>
             {
                 pageState === 0 ?
-                <Home/>
+                <Home setPageState={setPageState}/>
                 :
-                <Result/>
+                <Result setPageState={setPageState}/>
             }
         </>
     )
