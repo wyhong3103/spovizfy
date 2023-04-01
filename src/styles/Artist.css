@@ -1,0 +1,66 @@
+.artist-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 5rem;
+}
+
+.artist-box-title{
+    font-family: var(--main-font);
+    color : var(--green);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.artist-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap : 2rem;
+}
+
+.artist-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 3rem;
+    gap : 3rem;
+}
+
+.artist-avatar{
+    height : 12rem;
+    width : 12rem;
+    border-radius: 100%;
+}
+
+.artist-name a{
+    font-family: var(--main-font);
+    color : white;
+    text-decoration: none;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+.artist-name a:hover{
+    text-decoration: underline;
+}
+
+.artist-genre-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap : 0.3rem;
+}
+
+.genre-tag{
+    padding : 0.5rem;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    background-color: var(--green);
+    color : var(--black);
+    border-radius: 0.5rem;
+}
+
