@@ -1,21 +1,20 @@
 .genre-box{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap : 10rem;
+    gap : 5rem;
 }
 
 .genre-title{
     font-size: 4rem;
-    order : 1;
     color : var(--green);
     font-family: var(--main-font);
     text-align: center;
 }
 
 .genre-list{
-    padding : 10rem 2rem 10rem 2rem;
+    padding: 2rem;
     max-width : 50rem;
     display: flex;
     flex-wrap: wrap;
@@ -25,8 +24,8 @@
 }
 
 .genre-tag{
-    background-color: white;
-    color : var(--black);
+    background-color: var(--black1);
+    color : white;
     font-size: 3rem;
     padding : 1rem;
     border-radius: 0.5rem;
