@@ -59,7 +59,7 @@
     padding : 0.5rem;
     font-size: 1.5rem;
     font-family: var(--main-font);
-    background-color: var(--green);
+    background-color: white;
     color : var(--black);
     border-radius: 0.5rem;
 }
