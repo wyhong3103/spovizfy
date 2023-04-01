@@ -3,7 +3,7 @@ import '../../styles/Song.css';
 export const Song = ({data, title}) => {
     return (
         <div className="song-box">
-            <h1 className="result-title">
+            <h1 className="song-box-title">
                 {title}
             </h1>
             <div className="song-list">
@@ -12,7 +12,9 @@ export const Song = ({data, title}) => {
                         (item) => {
                             return(
                             <div className="song-grid">
-                                <img src={item.img} alt="song-img" className="song-img"/>
+                                <div className="song-img-box">
+                                    <img src={item.img} alt="song-img" className="song-img"/>
+                                </div>
                                 <h2 className="song-name">
                                     <a href={item.link} target="_blank" rel="noreferrer">{item.name}</a>
                                 </h2>
