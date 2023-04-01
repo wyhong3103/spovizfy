@@ -1,0 +1,29 @@
+.greeting-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 10rem;
+}
+
+.greeting{
+    color : white;
+    font-family: var(--main-font);
+    font-size: 5rem;
+}
+
+.green-span{
+    color : var(--green);
+}
+
+.user-avatar{
+    height : 20rem;
+    width: 20rem;
+    border-radius: 100%;
+}
+
+.greeting-box p {
+    font-family: var(--main-font);
+    color : white;
+    font-size: 3rem;
+}
