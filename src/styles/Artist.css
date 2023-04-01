@@ -27,12 +27,14 @@
     align-items: center;
     padding : 3rem;
     gap : 3rem;
+    background-color: var(--black1);
+    border-radius: 1rem;
 }
 
 .artist-avatar{
     height : 12rem;
     width : 12rem;
-    border-radius: 1rem;
+    border-radius: 100%;
 }
 
 .artist-name a{
