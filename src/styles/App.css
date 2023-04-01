@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&family=Poppins:wght@400;600;800&display=swap');
 
 *{
     margin : 0;
@@ -9,6 +9,7 @@
 html{
     font-size: 10px;
     --main-font : 'Montserrat', sans-serif;
+    --main-font1 : 'Poppins', sans-serif;
     --green : #1DB954;
     --hover-green : #35ca69;
     --black : #191414;
