@@ -32,11 +32,11 @@
 .artist-avatar{
     height : 12rem;
     width : 12rem;
-    border-radius: 100%;
+    border-radius: 1rem;
 }
 
 .artist-name a{
-    font-family: var(--main-font);
+    font-family: var(--main-font1);
     color : white;
     text-decoration: none;
     font-size: 2.7rem;
@@ -58,7 +58,8 @@
 .artist-genre-tag{
     padding : 0.5rem;
     font-size: 1.5rem;
-    font-family: var(--main-font);
+    font-family: var(--main-font1);
+    font-weight: 600;
     background-color: white;
     color : var(--black);
     border-radius: 0.5rem;
