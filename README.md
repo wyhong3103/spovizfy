@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Spovizfy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web app is my Hackerspace's Hackathon project to visualize data from Spotify.
 
-## Available Scripts
+# About
 
-In the project directory, you can run:
+This web app was built using [React](https://github.com/facebook/react) and utilizes the [Spotify Web API](https://developer.spotify.com/documentation/web-api) to obtain the necessary data for visualization. Additionally, a loading screen animation implemented with the [react-spinner](https://github.com/davidhu2000/react-spinners) library.
 
-### `npm start`
+## Running the Web Application Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To launch the web application, it is necessary to have <a href="http://nodejs.org/" target="_blank">Node.js</a> and <a href="https://npmjs.com/" target="_blank">npm</a> installed on your system.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once you have installed them: 
 
-### `npm test`
+1. Clone this repository to your local machine with:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+	`$ git clone https://github.com/wyhong3103/spovizfy.git`
 
-### `npm run build`
+2. Change directory to the cloned repository with:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+	`$ cd spovizfy`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the dependencies with:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+	`$ npm i`
 
-### `npm run eject`
+4. Change the `siteURL` variable in `./src/pages/siteURL.js` to `localhost:{PORT}`:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+	`export const siteURL = "localhost:3000";`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Put your spotify client ID under `./.env` file as:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+	`REACT_APP_CLIENT_ID = {CLIENT_ID}`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. Start a development server with:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+	`$ npm start`
