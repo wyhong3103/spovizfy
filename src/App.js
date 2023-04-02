@@ -10,6 +10,15 @@ export const App = () => {
     const [pageState, setPageState] = useState(0);
     const [info, setInfo] = useState({});
 
+    const reset = () => {
+        apiHandler.logOut();
+        const url = "https://accounts.spotify.com/en/logout";
+        const spotifyLogoutWindow = window.open(url, 'Spotify Logout', 'width=700,height=500,top=40,left=40')                                                                                                
+        setTimeout(() => spotifyLogoutWindow.close(), 2000)
+        setPageState(0);
+        setInfo({});
+    }
+
     useEffect(
         () => {
             if (pageState === 1){
@@ -43,7 +52,7 @@ export const App = () => {
                     pageState === 1 ?
                     null
                     :
-                    <Result setPageState={setPageState} info={info}/>
+                    <Result reset={reset} info={info}/>
                 )
             }
         </>

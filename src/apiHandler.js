@@ -335,8 +335,13 @@ export const apiHandler = (() => {
         return data;
     };
 
+    const logOut = () => {
+        access_token = "";
+    }
+
     return{
         isValid,
-        getData
+        getData,
+        logOut
     }
 })();
