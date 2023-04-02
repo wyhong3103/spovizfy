@@ -14,7 +14,7 @@ export const useElementOnSreen = () => {
             const options = {
                 root : null,
                 rootMargin : "0px",
-                threshold : 0.3
+                threshold : 0.1
             }
             const observer = new IntersectionObserver(visCallback, options);
             if (containerRef.current) observer.observe(containerRef.current);
