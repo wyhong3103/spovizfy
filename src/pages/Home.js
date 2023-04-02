@@ -34,7 +34,7 @@ export const Home = ({setPageState, reset}) => {
     return(
         <div className="home-page">
             <h1 className="home-title">
-                Spovizfy
+                Vizfy
             </h1>
             <p className="home-desc">
                 A way to experience your music with stunning visualizations that transform your favorite songs into immersive journeys.

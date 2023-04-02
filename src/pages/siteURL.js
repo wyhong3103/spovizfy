@@ -1,1 +1,1 @@
-export const siteURL = "https://spovizfy.netlify.app/";
+export const siteURL = "https://vizfy.netlify.app/";
