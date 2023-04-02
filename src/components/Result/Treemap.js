@@ -1,5 +1,4 @@
 import { useElementOnSreen } from "../../hooks/elementOnScreen";
-import { useEffect, useState } from "react";
 import "../../styles/Treemap.css";
 import ReactApexChart from "react-apexcharts";
 

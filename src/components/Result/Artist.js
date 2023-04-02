@@ -22,7 +22,7 @@ export const Artist = ({data, title}) => {
                                     </h2>
                                     <div className="artist-genre-box">
                                         {
-                                            item.genre.map(
+                                            item.genres.map(
                                                 (g) => {
                                                     return(
                                                         <div className="artist-genre-tag">
