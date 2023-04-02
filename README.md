@@ -4,7 +4,10 @@ This is my Hackerspace's Hackathon project. It visualizes data from Spotify.
 
 # Live Demo
 
-[Spovizfy](https://spovizfy.netlify.app/)
+[Spovizfy](https://spovizfy.netlify.app/) 
+<br>
+(*THE API IS CURRENTLY UNDER DEVELOPMENT MODE WHICH MEANS IT WILL NOT WORK FOR NOW*)
+
 
 # About
 
