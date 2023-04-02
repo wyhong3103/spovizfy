@@ -27,6 +27,7 @@ export const App = () => {
                     const data = await apiHandler.getData();
                     if (data.status === false){
                         setPageState(0);
+                        reset();
                     }else{
                         setInfo(data.info);
                     }
@@ -47,7 +48,7 @@ export const App = () => {
         <>
             {
                 pageState === 0 ?
-                <Home setPageState={setPageState}/>
+                <Home setPageState={setPageState} reset={reset}/>
                 :
                 (
                     pageState === 1 ?

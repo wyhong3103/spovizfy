@@ -1,10 +1,10 @@
 import { apiHandler } from '../apiHandler';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { siteURL } from './siteUrl';
+import { siteURL } from './siteURL';
 import '../styles/Home.css';
 
-export const Home = ({setPageState}) => {
+export const Home = ({setPageState, reset}) => {
     //authenticate here, check if token is valid
     //if valid, setPageState = 1,
     //loading screen, start fetching
@@ -25,6 +25,7 @@ export const Home = ({setPageState}) => {
                     navigate("/");
                 }else if (ret === -1){
                     setMsg("Something went wrong! Please try again!");
+                    reset();
                 }
             })();
         }
