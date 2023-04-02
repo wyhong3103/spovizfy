@@ -2,14 +2,14 @@
 
 This is my Hackerspace's Hackathon project. It visualizes data from Spotify.
 
-# Live Demo
+## Live Demo
 
 [Vizfy](https://spovizfy.netlify.app/) 
 <br>
 (*THE API IS CURRENTLY UNDER DEVELOPMENT MODE WHICH MEANS IT WILL NOT WORK FOR NOW*)
 
 
-# About
+## About
 
 This web app was built using [React](https://github.com/facebook/react) and utilizes the [Spotify Web API](https://developer.spotify.com/documentation/web-api) to obtain the necessary data for visualization. Additionally, a loading screen animation implemented with the [react-spinner](https://github.com/davidhu2000/react-spinners) library.
 
