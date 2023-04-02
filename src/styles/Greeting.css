@@ -1,9 +1,18 @@
+.greeting-hidden{
+    opacity: 0;
+}
+
+.greeting-reveal{
+    opacity: 100;
+}
+
 .greeting-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap : 10rem;
+    transition: transform .5s ease-in, opacity .4s ease;
 }
 
 .greeting{

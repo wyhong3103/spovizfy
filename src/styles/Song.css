@@ -1,8 +1,17 @@
+.song-hidden{
+    opacity: 0;
+}
+
+.song-reveal{
+    opacity: 100;
+}
+
 .song-box{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap : 5rem;
+    transition: transform .5s ease-in, opacity .4s ease;
 }
 
 

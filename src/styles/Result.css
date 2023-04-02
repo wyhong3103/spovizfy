@@ -6,4 +6,5 @@
     align-items: center;
     gap : 10rem;
     padding : 12rem 20rem 12rem 20rem;
+    overflow: auto;
 }

@@ -1,9 +1,18 @@
+.artist-hidden{
+    opacity: 0;
+}
+
+.artist-reveal{
+    opacity: 100;
+}
+
 .artist-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap : 5rem;
+    transition: transform .5s ease-in, opacity .4s ease;
 }
 
 .artist-box-title{
