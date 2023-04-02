@@ -20,9 +20,9 @@ export const Home = ({setPageState, reset}) => {
         () => {
             (async ()=>{
                 const ret = await apiHandler.isValid();
+                navigate("/");
                 if (ret === 1){
                     setPageState(1);
-                    navigate("/");
                 }else if (ret === -1){
                     setMsg("Something went wrong! Please try again!");
                     reset();
