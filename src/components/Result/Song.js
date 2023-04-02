@@ -1,8 +1,10 @@
+import { useElementOnSreen } from '../../hooks/elementOnScreen';
 import '../../styles/Song.css';
 
 export const Song = ({data, title, flip}) => {
+    const [containerRef, visible] = useElementOnSreen();
     return (
-        <div className="song-box">
+        <div ref={containerRef} className={`song-box ${visible ? "song-reveal" : "song-hidden"}`}>
             <h1 className={`song-box-title ${flip ? "flip-column" : null}`}>
                 {title}
             </h1>

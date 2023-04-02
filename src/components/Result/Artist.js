@@ -1,8 +1,11 @@
+import { useElementOnSreen } from '../../hooks/elementOnScreen';
 import '../../styles/Artist.css';
 
 export const Artist = ({data, title}) => {
+    const [containerRef, visible] = useElementOnSreen();
+
     return(
-        <div className="artist-box">
+        <div className={`artist-box ${visible ? "artist-reveal" : "artist-hidden"}`} ref={containerRef}>
             <h1 className="artist-box-title">
                 {title}
             </h1>

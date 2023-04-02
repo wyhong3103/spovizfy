@@ -1,15 +1,10 @@
+import { useElementOnSreen } from "../../hooks/elementOnScreen";
 import { useEffect, useState } from "react";
 import "../../styles/Treemap.css";
 import ReactApexChart from "react-apexcharts";
 
-
-function getWindowSize() {
-  const {innerWidth, innerHeight} = window;
-  return {innerWidth, innerHeight};
-}
-
 export const Treemap = ({data, title}) => {
-    const [windowSize, setWindowSize] = useState(getWindowSize());
+    const [containerRef, visible] = useElementOnSreen();
     const series = [{data : data}];
     const options = {
         legend: {
@@ -27,25 +22,12 @@ export const Treemap = ({data, title}) => {
         ],
     };
 
-    useEffect(() => {
-        function handleWindowResize() {
-        setWindowSize(getWindowSize());
-        }
-
-        window.addEventListener('resize', handleWindowResize);
-
-        return () => {
-        window.removeEventListener('resize', handleWindowResize);
-        };
-    }, []);
-
-
     return(
-        <div className="treemap-box">
+        <div ref={containerRef} className={`treemap-box ${visible ? "treemap-reveal" : "treemap-hidden"}`}>
             <h1 className="treemap-box-title">
                 {title}
             </h1>
-            <ReactApexChart series={series} options={options} type="treemap" height={windowSize.innerHeight * (7/10)} width={windowSize.innerWidth * (7/10)} />
+            <ReactApexChart series={series} options={options} type="treemap" height={500} width={1000} />
         </div>
     )
 };
