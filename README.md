@@ -1,6 +1,6 @@
 # Spovizfy
 
-This web app is my Hackerspace's Hackathon project to visualize data from Spotify.
+This is my Hackerspace's Hackathon project. It visualizes data from Spotify.
 
 # Live Demo
 
