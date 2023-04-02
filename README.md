@@ -1,10 +1,10 @@
-# Spovizfy
+# Vizfy
 
 This is my Hackerspace's Hackathon project. It visualizes data from Spotify.
 
 # Live Demo
 
-[Spovizfy](https://spovizfy.netlify.app/) 
+[Vizfy](https://spovizfy.netlify.app/) 
 <br>
 (*THE API IS CURRENTLY UNDER DEVELOPMENT MODE WHICH MEANS IT WILL NOT WORK FOR NOW*)
 
@@ -21,11 +21,11 @@ Once you have installed them:
 
 1. Clone this repository to your local machine with:
 
-	`$ git clone https://github.com/wyhong3103/spovizfy.git`
+	`$ git clone https://github.com/wyhong3103/vizfy.git`
 
 2. Change directory to the cloned repository with:
 
-	`$ cd spovizfy`
+	`$ cd vizfy`
 
 3. Install the dependencies with:
 
