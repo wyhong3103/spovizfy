@@ -4,9 +4,9 @@ import { Genre } from "../components/Result/Genre";
 import { Greeting } from "../components/Result/Greeting";
 import { Song } from "../components/Result/Song";
 import { Treemap } from "../components/Result/Treemap";
-import { useEffect } from 'react';
 
-export const Result = ({info}) => {
+export const Result = ({info, reset}) => {
+
     return(
         <div className="result-page">
             <Greeting data={info.personal}/>
@@ -16,7 +16,9 @@ export const Result = ({info}) => {
             <Genre data={info.top5_genre} title="Your Top 5 Genres"/>
             <Treemap data={info.genre_treemap_data} title="Your Favourite Genre"/>
             <Song data={info.recommended_songs} title="Recommended Tracks Just for You" flip={1}/>
-            {/* try again button */}
+            <button className='logout-btn' onClick={reset}>
+                LOG OUT
+            </button>
         </div>
     );
 };

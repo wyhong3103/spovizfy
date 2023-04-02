@@ -8,3 +8,23 @@
     padding : 12rem 20rem 12rem 20rem;
     overflow: auto;
 }
+
+.logout-btn{
+    border : none;
+    font-family: var(--main-font1);
+    font-weight: 800;
+    color : var(--black);
+    font-size: 2.5rem;
+    background-color: var(--green);
+    padding : 1rem 2rem 1rem 2rem;
+    border-radius: 5rem;
+    transition : all 0.3s;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.logout-btn:hover{
+    cursor: pointer;
+    background-color : var(--hover-green);
+}
+
