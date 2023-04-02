@@ -8,14 +8,15 @@
         transition: transform .5s ease-in, opacity .4s ease;
     }
 
+    .song-box-title{
+        transform : rotate(-90deg);
+    }
+
     .flip-column{
         transform : rotate(90deg);
         order : 1;
     }
 
-    .song-box-title{
-        transform : rotate(-90deg);
-    }
 
     .song-grid{
         display: grid;
