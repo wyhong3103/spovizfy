@@ -1,18 +1,47 @@
 .home-page{
-    min-height : 100vh;
+    height : 100vh;
+    width : 100vw;
     background-color: var(--black);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+@media screen and (max-width : 800px){
+    .home-title{
+        font-size: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .home-desc{
+        font-size: 1.5rem;
+    }
+
+    .view-result-btn{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width : 800px){
+    .home-title{
+        font-size: 10rem;
+        margin-bottom: 7rem;
+    }
+    .home-desc{
+        font-size: 2rem;
+    }
+    .view-result-btn{
+        font-size: 2.5rem;
+    }
 }
 
 .home-title{
     font-family: var(--main-font);
     font-weight: 800;
-    font-size: 10rem;
     color : var(--green);
-    margin-bottom: 7rem;
+    text-align: center;
 }
 
 .home-desc{
@@ -20,7 +49,6 @@
     color : white;
     font-family: var(--main-font1);
     font-weight: 300;
-    font-size: 2rem;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -30,7 +58,6 @@
     font-family: var(--main-font1);
     font-weight: 800;
     color : var(--black);
-    font-size: 2.5rem;
     background-color: var(--green);
     padding : 1rem 2rem 1rem 2rem;
     border-radius: 5rem;
