@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { apiHandler } from './apiHandler';
 import { Home } from "./pages/Home";
 import { Result } from "./pages/Result";
+import { Loading } from './pages/Loading';
 
 export const App = () => {
     
@@ -50,7 +51,7 @@ export const App = () => {
                 :
                 (
                     pageState === 1 ?
-                    null
+                    <Loading/>
                     :
                     <Result reset={reset} info={info}/>
                 )
