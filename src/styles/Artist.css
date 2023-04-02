@@ -32,26 +32,32 @@
 .artist-card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap : 2rem;
     background-color: var(--black1);
     border-radius: 1rem;
-    max-width : 20rem;
+    width: 25rem;;
 }
 
 .artist-avatar{
+    height : 20rem;
     width : 100%;
+    object-fit: cover;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 
 .artist-name a{
+    display: block;
     font-family: var(--main-font1);
     color : white;
     text-decoration: none;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-weight: 500;
+    width : 15rem;
+    text-align: center;
+    word-wrap: break-word;
+    margin : 1rem;
 }
 
 .artist-name a:hover{
