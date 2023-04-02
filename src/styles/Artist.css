@@ -74,5 +74,6 @@
     background-color: var(--black);
     color : white;
     border-radius: 0.5rem;
+    text-align: center;
 }
 
