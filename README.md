@@ -4,10 +4,10 @@ This is my Hackerspace's Hackathon project. It visualizes data from Spotify.
 
 ## Live Demo
 
-[Vizfy](https://spovizfy.netlify.app/) 
+[Vizfy](https://vizfy.netlify.app/) 
 <br>
-(*THE API IS CURRENTLY UNDER DEVELOPMENT MODE WHICH MEANS IT WILL NOT WORK FOR NOW*)
 
+*The API is currently under development mode which means it will not work for anyone who isn't granted with the acess, you can run this application locally with your spotify client ID, the API will work for the account that you used, or just enjoy the screenshots : (.*
 
 ## About
 
@@ -35,10 +35,38 @@ Once you have installed them:
 
 	`export const siteURL = "localhost:3000";`
 
-5. Put your spotify client ID under `./.env` file as:
+5. Log into [Spotify for Developers](https://developer.spotify.com/), create an application in the dashboard, make sure you put the redirect URI as the url you had in the previous step.
+
+6. Put your spotify client ID under `./.env` file as:
 
 	`REACT_APP_CLIENT_ID = {CLIENT_ID}`
 
-6. Start a development server with:
+7. Start a development server with:
 
 	`$ npm start`
+
+## Screenshots :(
+
+
+### Home
+
+<img src='./screenshots/home.png' alt="home" width="400">
+
+### The Amazing Loading Screen
+
+<img src='./screenshots/loading.gif' alt="loading" width='400'>
+
+
+### Report Page
+
+<img src='./screenshots/1.png' alt="greeting message" width="400">
+<img src='./screenshots/2.png' alt="top 10 tracks" width="400">
+<img src='./screenshots/3.png' alt="top 10 artists" width="400">
+<img src='./screenshots/4.png' alt="top 5 genre" width="400">
+<img src='./screenshots/5.png' alt="favourte genre" width="400">
+<img src='./screenshots/6.png' alt="recommendation" width="400">
+
+
+
+
+
